@@ -20,6 +20,7 @@ form.addEventListener("submit", function (event) {
     cardTask.innerText = newTask.task // stampo quello che ho scritto
     cardBtn.innerHTML = "<ion-icon name='trash-bin'></ion-icon>"
     cardBtn.classList.add("button") // assegno la classe al button
+    cardTask.classList.add("task")
     card.append(cardTask, cardBtn)
     // Inserisco gli elementi all'interno della card
 
@@ -33,10 +34,19 @@ form.addEventListener("submit", function (event) {
         }
     })
 
+    cardTask.addEventListener("click", function () {
+        let allTasks = document.querySelectorAll('.task')
+        for (let i = 0; i < allTasks.length; i++) {
+          allTasks[i].addEventListener('click', function () {
+            this.classList.toggle('completed')
+          })
+        }
+      })
+/*
     cardTask.addEventListener('click', function() {
-        allTask.classList.toggle("checked-task");
+        cardTask.classList.toggle("checked-task");
     })
-
+*/
     const toDo = document.getElementById("listTask")
     toDo.appendChild(card)
     // seleziono dove inserire le card create nella pagina
