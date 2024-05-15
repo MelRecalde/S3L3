@@ -5,7 +5,7 @@ body {
     font-family: "Satisfy", cursive;
     font-size: xx-large;
     padding: 20px;
-
+    height: 100vh;
 }
 
 #task {
@@ -15,10 +15,12 @@ body {
     padding: 3px;
     text-align: center;
     font-size: large;
-    display: inline-block;
     margin-top: 2px;
     color: #5a321d;
     box-shadow: #5a321d5e 5px 5px;
+    width: 75%;
+    height: 45px;
+    display: inline-block;
 }
 
 button {
@@ -29,7 +31,6 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 10px;
 }
 
@@ -37,24 +38,46 @@ button {
     color:#F2E4D9;
     text-align: center;
     padding: 1px;
-    margin: 2px;
+    margin: 0, auto;
     background-color:#5a321d;
     width: 100%;
     font-size: large;
-    border-radius: 10px;
+    display: inline-block;
+    border: 0.5px solid beige;
+    border-radius: 30px;
 }
 
 h1 {
     color:#fff6f0;
     margin-bottom: 0.5px;
     /*border: 1px solid;*/
-    padding-left: 20px;
+    padding-left: 2px;
     text-shadow: #5a321d 12px;
 }
 
 .input {
-    display: inline-block;
     margin-top: 0.5px;
     /*border: 1px solid;*/
     padding: 10px;
+}
+
+.button {
+    /*background-color: #B27F60;*/
+    border-radius: 30px;
+    margin: auto;
+    border: #5a321d 1px solid;
+    padding: 10px;
+    color: #F2E4D9;
+}
+
+.card {
+    display: block;
+    margin: 0;
+    padding: 5px;
+}
+
+.card p {
+    display: inline-block;
+    padding: 3px;
+    margin: 5px;
 }
