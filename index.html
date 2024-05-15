@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>TO DO LIST</title>
 </head>
+
 <body>
-    
+    <main>
+        <h1>To do list</h1>
+        <div id="container">
+            <form id="addTask">
+                <div class="input">
+                    <input id="task" type="text" placeholder="Add task" />
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>
+                          add                          
+                    </button>
+                </div>
+            </form>
+        </div>
+        <section id="listTask"></section>
+    </main>
 </body>
+<script src="./JAVASCRIPT/s3l3.js"></script>
+
 </html>
