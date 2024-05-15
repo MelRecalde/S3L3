@@ -23,7 +23,7 @@ body {
 
 button {
     border-radius: 32% 68% 46% 54% / 65% 30% 70% 35% ;
-    background-color:#B27F60;
+    background-color:#7a5238;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -38,7 +38,10 @@ button {
     text-align: center;
     padding: 1px;
     margin: 2px;
-
+    background-color:#5a321d;
+    width: 100%;
+    font-size: large;
+    border-radius: 10px;
 }
 
 h1 {

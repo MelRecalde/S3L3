@@ -20,5 +20,7 @@ form.addEventListener("submit", function (event) {
     toDo.appendChild(card)
 
     taskInputField.value = ""
+
+    toDo
 }
 )
